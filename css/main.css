@@ -1,13 +1,12 @@
 :root {
   
-  --bg-1: #f3e6d0;
-  --bg-2: #e8d4b0;     
-  --bg-3: #d6b88a;     
-  --accent: #b67c49;   
-  --text: #000000;     
+  --bg-1: white;
+  --bg-2: #e8e8e8;     
+  --bg-3: #cacaca;     
+  --accent: #1A73E8;   
+  --text: black;     
   --muted: #1f1c19;     
-  --surface: #fffaf3;   
-  --card: #f1ddc0;      
+  --card: #1A73E8;      
 }
 
 body {
@@ -15,8 +14,7 @@ body {
   margin: 0;
   font-family: "Futura", Helvetica, Arial, sans-serif;
   color: var(--text);
-  background: radial-gradient(1000px 800px at 50% 35%, rgba(182, 124, 73, 0.15), transparent 70%),
-              linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 50%, var(--bg-3) 100%);
+  background: white;
 }
 
 .container {
@@ -31,7 +29,7 @@ nav {
 }
 
 footer {
-  background: rgba(0, 0, 0, 0.25);
+  background: var(--bg-3);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -58,11 +56,11 @@ footer {
 .hero {
   text-align: center;
   padding: 8rem 0 4rem;
-  background: radial-gradient(700px circle at center, var(--accent)10%, transparent 70%);
+  background: var(--bg-1)
 }
 .hero__title {
   font-size: clamp(2.5rem, 6vw, 5rem);
-  color: var(--highlight);
+  color: black;
 }
 .hero__tagline {
   color: var(--muted);
@@ -82,7 +80,7 @@ footer {
 }
 .btn--primary {
   background: var(--accent);
-  color: #000000;
+  color: white;
   font-weight: 700;
 }
 .btn--primary:hover {
@@ -111,9 +109,10 @@ footer {
 .feature-card {
   background: var(--card);
   padding: 1.5rem;
-  border-radius: var(--radius);
+  border-radius: 25px;
   text-align: center;
   transition: transform 0.3s ease;
+  color: white;
 }
 .feature-card:hover {
   transform: translateY(-5px);
@@ -159,4 +158,9 @@ model-viewer {
   width: 200px;
   text-align: left;
   font-size: 0.9rem;
+}
+
+.brand__img {
+  width: 20px;
+  height: auto;
 }

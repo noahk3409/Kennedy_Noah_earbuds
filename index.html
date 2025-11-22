@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>EarBuds</title>
+    <title>Ion EarBuds</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container">
         <a href="#" class="brand">
-          <img src="images/budslogo.svg" alt="logo" class="brand__img" />
+          <img src="images/earbuds_logo.png" alt="logo" class="brand__img" />
         </a>
         <nav class="nav">
           <a href="#features" class="nav-link">Features</a>
-          <a href="#ar-experience" class="nav-link">AR Model</a>
+          <a href="#ar-experience" class="nav-link">Interactive Model</a>
         </nav>
       </div>
     </header>
@@ -22,7 +22,7 @@
     <main>
       <section class="hero">
         <div class="container hero__content">
-          <h1 class="hero__title">Novo EarBuds</h1>
+          <h1 class="hero__title">Ion EarBuds</h1>
           <p class="hero__tagline">Redefine your sound experience.</p>
           <a href="#ar-experience" class="btn btn--primary">Explore Model</a>
         </div>
@@ -31,24 +31,24 @@
       <section id="features" class="features">
         <div class="container">
           <div class="features__images">
-            <img src="images/" alt="colour variant 1" class="feature-thumb" />
-            <img src="images/" alt="colour variant 2" class="feature-thumb" />
-            <img src="images/" alt="colour variant 3" class="feature-thumb" />
+            <img src="images/blue.png" alt="colour variant 1" class="feature-thumb"/>
+            <img src="images/black.png" alt="colour variant 2" class="feature-thumb"/>
+            <img src="images/grey.png" alt="colour variant 3" class="feature-thumb"/>
           </div>
 
           <div class="features__grid">
             <article class="feature-card">
-              <img src="images/poster.webp" alt="Comfort" class="feature-card__img" />
+              <img src="images/poster.webp" alt="Comfort" class="feature-card__img"/>
               <h3>Comfortable Fit</h3>
               <p>Soft silicone tips create an acoustic seal for all-day comfort.</p>
             </article>
             <article class="feature-card">
-              <img src="images/ar_icon.png" alt="360 Audio" class="feature-card__img" />
+              <img src="images/ar_icon.png" alt="360 Audio" class="feature-card__img"/>
               <h3>360° Audio</h3>
               <p>Experience immersive sound with Dolby Head Tracking™ technology.</p>
             </article>
             <article class="feature-card">
-              <img src="images/ar_hand_prompt.png" alt="Controls" class="feature-card__img" />
+              <img src="images/ar_hand_prompt.png" alt="Controls" class="feature-card__img"/>
               <h3>Seamless Controls</h3>
               <p>Experience seamless volume control for effortless listening, anytime, anywhere.</p>
             </article>
@@ -61,7 +61,7 @@
           <h2 class="ar-section__title">Interactive Model</h2>
           <model-viewer
             id="model"
-            src="model/earbuds.gltf"
+            src="model/ion-model.gltf"
             camera-controls
             poster="images/poster.webp"
             shadow-intensity="1"
@@ -81,9 +81,6 @@
             <button class="Hotspot" slot="hotspot-3">
               <div class="HotspotAnnotation" id="hotspot-3"></div>
             </button>
-            <button class="Hotspot" slot="hotspot-4">
-              <div class="HotspotAnnotation" id="hotspot-4"></div>
-            </button>
           </model-viewer>
         </div>
       </section>
@@ -91,7 +88,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p class="muted">© 2025 Novo — All Rights Reserved</p>
+        <p class="muted">© 2025 Ion — All Rights Reserved</p>
       </div>
     </footer>
 
