@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 38 45" style="enable-background:new 0 0 38 45;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#CACCC8;}
-	.st1{fill:#E89B36;}
-</style>
-<g id="Polygon_7" transform="translate(38) rotate(90)">
-	<path class="st0" d="M32.6,36H12.4L2.3,19L12.4,2h20.2l10.1,17L32.6,36z"/>
-	<path class="st1" d="M13.5,4L4.6,19l8.9,15h17.9l8.9-15L31.5,4H13.5 M11.2,0h22.5L45,19L33.8,38H11.2L0,19L11.2,0z"/>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 38 45">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #cacaca;
+      }
+
+      .st1 {
+        fill: #1a73e8;
+      }
+    </style>
+  </defs>
+  <g id="Polygon_7">
+    <path class="st0" d="M2,32.6V12.4L19,2.3l17,10.1v20.2l-17,10.1L2,32.6Z"/>
+    <path class="st1" d="M34,13.5l-15-8.9L4,13.5v17.9l15,8.9,15-8.8V13.5M38,11.2v22.5l-19,11.3L0,33.8V11.2L19,0l19,11.2Z"/>
+  </g>
 </svg>

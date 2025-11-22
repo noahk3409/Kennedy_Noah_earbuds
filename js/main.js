@@ -3,10 +3,6 @@
 
   const infoBoxes = [
     {
-      title: "Noise-cancelling microphones",
-      text: "Dual microphones cancel out ambient noise before it reaches your ears.",
-    },
-    {
       title: "Comfortable Fit",
       text: "Soft silicone tips ensure stability and comfort for every ear type.",
     },
@@ -15,8 +11,8 @@
       text: "Surround sound with Dolby Head Tracking™ keeps you immersed.",
     },
     {
-      title: "Ultra Fast Charging",
-      text: "Get up to 6 hours of playtime in just 15 minutes of charge.",
+      title: "Seamless Controls",
+      text: "Experience seamless volume control for effortless listening, anytime, anywhere.",
     },
   ];
 
