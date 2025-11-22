@@ -50,3 +50,46 @@
     h.addEventListener("mouseleave", hideInfo);
   });
 })();
+
+// Scroll animations
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".scroll-box", {
+  opacity: 0,
+  y: 50,
+  duration: 1.3,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: "#scrollSection",
+    start: "top 80%", 
+    end: "top 30%",
+    scrub: false,       
+    markers: false      
+  }
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+const model = document.querySelector("#scrollSection model-viewer");
+
+model.addEventListener("load", () => {
+  
+  const animation = model.model.animations[0];
+  const duration = animation.duration;
+
+  model.pause();
+
+  gsap.to(model, {
+    animationTime: duration,  
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#scrollSection",
+      start: "top 80%",
+      end: "bottom 20%",
+      scrub: 1,
+      markers: false
+    }
+  });
+
+});

@@ -164,3 +164,17 @@ model-viewer {
   width: 20px;
   height: auto;
 }
+
+
+#scrollSection {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-box {
+  font-size: 2rem;
+  opacity: 0;
+  transform: translateY(50px);
+}
