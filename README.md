@@ -100,6 +100,4 @@ Ensure your browser allows module scripts for <model-viewer>.
 
 ## 👤 Author
 Noah Kennedy
-
-Noah Kennedy
 Interactive Media Design
