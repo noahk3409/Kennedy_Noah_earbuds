@@ -1,0 +1,11 @@
+header, nav {
+  width: 100%;
+  background-color: $bg-2;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}

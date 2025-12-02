@@ -3,7 +3,14 @@
 //have to include all of these otherwise main.css will be empty
 //We do not create styles in here
 
-@import "./abstracts/index";
-@import "./base/index";
-@import "./components/index";
-@import "./pages/index";
+// 1. ABSTRACTS (variables, mixins)
+@use "abstracts/index" as abstracts;
+
+// 2. BASE (reset, typography)
+@use "base/index" as base;
+
+// 3. COMPONENTS (nav, buttons, cards, hotspots, etc.)
+@use "components/index" as components;
+
+// 4. PAGES (home, features, footer, etc.)
+@use "pages/index" as pages;

@@ -2,28 +2,20 @@
 
 //flex box mixins
 
-@mixin flex-column {
-      display: flex;
-      flex-direction: column;
+@mixin container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-    
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @mixin flex-center {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-}
-    
-@mixin flex-center-column {
-      @include flex-center;
-      flex-direction: column;
-}
-    
-@mixin flex-center-vert {
-      display: flex;
-      align-items: center;
-}
-    
-@mixin flex-center-horiz {
-      display: flex;
-      justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

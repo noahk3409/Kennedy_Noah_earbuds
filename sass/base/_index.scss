@@ -1,1 +1,8 @@
-@forward 'typography';
+@use "../abstracts/variables" as v;
+
+body {
+  margin: 0;
+  font-family: "Futura", Helvetica, Arial, sans-serif;
+  color: v.$text;
+  background: v.$bg-1;
+}
