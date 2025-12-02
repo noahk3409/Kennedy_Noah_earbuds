@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: "Futura", Helvetica, Arial, sans-serif;
+  color: black;
+  background: white;
+}
+
+header, nav {
+  background-color: #e8e8e8;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-link {
+  color: #1f1c19;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #1A73E8;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn--primary {
+  background: #1A73E8;
+  color: white;
+  font-weight: 700;
+}
+.btn--primary:hover {
+  transform: translateY(-3px);
+}
+
+.features__images {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 150px;
+}
+.features__images .feature-thumb {
+  width: 25%;
+  border-radius: 25px;
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background: #1A73E8;
+  padding: 1.5rem;
+  border-radius: 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  color: white;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+.feature-card__img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+
+.Hotspot {
+  background: url("../images/hotspot.svg") center no-repeat;
+  border: none;
+  width: 45px;
+  height: 39px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.Hotspot:hover {
+  transform: scale(1.1);
+}
+
+.HotspotAnnotation {
+  visibility: hidden;
+  position: absolute;
+  background: #fff;
+  color: #111;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  width: 200px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .Hotspot {
+    display: none;
+  }
+}
+.hotspot {
+  background: white;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+}
+
+model-viewer::part(hotspot) {
+  background: white;
+  border-radius: 50%;
+}
+
+.hero {
+  text-align: center;
+  padding: 8rem 0 4rem;
+  background: white;
+}
+
+.features {
+  padding: 4rem 0;
+}
+
+footer {
+  background: #999999;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.brand__img {
+  width: 20px;
+  height: auto;
+}/*# sourceMappingURL=main.css.map */

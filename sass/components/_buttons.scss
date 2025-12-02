@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as v;
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &--primary {
+    background: v.$accent;
+    color: white;
+    font-weight: 700;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+}

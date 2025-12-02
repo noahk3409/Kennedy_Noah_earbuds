@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+header, nav {
+  background-color: v.$bg-2;
+}
+
+.site-header .container {
+  @include m.flex-between;
+  padding: 20px;
+}
+
+.nav-link {
+  color: v.$muted;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: v.$accent;
+  }
+}
+

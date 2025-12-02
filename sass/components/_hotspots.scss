@@ -1,0 +1,43 @@
+.Hotspot {
+  background: url("../images/hotspot.svg") center no-repeat;
+  border: none;
+  width: 45px;
+  height: 39px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.HotspotAnnotation {
+  visibility: hidden;
+  position: absolute;
+  background: #fff;
+  color: #111;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  width: 200px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .Hotspot {
+    display: none;
+  }
+}
+
+.hotspot {
+  background: white;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+}
+
+model-viewer::part(hotspot) {
+  background: white;
+  border-radius: 50%;
+}

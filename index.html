@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Ion EarBuds</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="sass/main.css">
   </head>
   <body>
     <header class="site-header">
@@ -35,24 +36,24 @@
       <section id="features" class="features">
         <div class="container">
           <div class="features__images">
-            <img src="images/blue.png" alt="colour variant 1" class="feature-thumb"/>
-            <img src="images/black.png" alt="colour variant 2" class="feature-thumb"/>
-            <img src="images/grey.png" alt="colour variant 3" class="feature-thumb"/>
+            <img src="images/blue.png" alt="colour variant 1" class="feature-thumb" />
+            <img src="images/black.png" alt="colour variant 2" class="feature-thumb" />
+            <img src="images/grey.png" alt="colour variant 3" class="feature-thumb" />
           </div>
 
           <div class="features__grid">
             <article class="feature-card">
-              <img src="images/promo.png" alt="Comfort" class="feature-card__img"/>
+              <img src="images/promo.png" alt="Comfort" class="feature-card__img" />
               <h3>Comfortable Fit</h3>
               <p>Soft silicone tips create an acoustic seal for all-day comfort.</p>
             </article>
             <article class="feature-card">
-              <img src="images/promo-2.png" alt="360 Audio" class="feature-card__img"/>
+              <img src="images/promo-2.png" alt="360 Audio" class="feature-card__img" />
               <h3>360° Audio</h3>
               <p>Experience immersive sound with Dolby Head Tracking™ technology.</p>
             </article>
             <article class="feature-card">
-              <img src="images/promo-3.png" alt="Controls" class="feature-card__img"/>
+              <img src="images/promo-3.png" alt="Controls" class="feature-card__img" />
               <h3>Seamless Controls</h3>
               <p>Experience seamless volume control for effortless listening, anytime, anywhere.</p>
             </article>
@@ -60,9 +61,29 @@
         </div>
       </section>
 
+      <!-- static image for mobile -->
+      <section class="static-image-section">
+        <div class="container">
+          <img
+            id="static-earbud-image"
+            src="images/black.png"
+            alt="earbuds static view"
+          />
+        </div>
+      </section>
+
+      <!-- loader -->
+      <div id="loader" class="loader hidden">Loading...</div>
+
+      <!-- error message -->
+      <div id="error" class="error hidden">
+        Something went wrong loading the model details.
+      </div>
+
       <div id="ar-experience" class="ar-section">
         <div class="container">
           <h2 class="ar-section__title">Interactive Model</h2>
+          <h3>For Desktop and Tablet</h3>
           <model-viewer
             id="model"
             src="model/ion-earbuds.gltf"
@@ -76,30 +97,64 @@
             reveal="auto"
             preload
           >
-            <button class="Hotspot" slot="hotspot-1" data-position="0 1 0" data-normal="0 1 0">
+            <button
+              class="Hotspot"
+              slot="hotspot-1"
+              data-position="0 1 0"
+              data-normal="0 1 0"
+            >
               <span class="HotspotAnnotation" id="hotspot-1"></span>
             </button>
-            <button class="Hotspot" slot="hotspot-2" data-position="-0.3 1 0" data-normal="0 1 0">
+            <button
+              class="Hotspot"
+              slot="hotspot-2"
+              data-position="-0.3 1 0"
+              data-normal="0 1 0"
+            >
               <span class="HotspotAnnotation" id="hotspot-2"></span>
             </button>
-          <button class="Hotspot" slot="hotspot-3" data-position="0.2 0.5 0" data-normal="0 1 0">
+            <button
+              class="Hotspot"
+              slot="hotspot-3"
+              data-position="0.2 0.5 0"
+              data-normal="0 1 0"
+            >
               <span class="HotspotAnnotation" id="hotspot-3"></span>
-          </button>
+            </button>
           </model-viewer>
         </div>
       </div>
+
+      <!-- template for hotspot info -->
+      <template id="hotspot-template">
+        <div class="hotspot-info">
+          <h3 class="hotspot-title"></h3>
+          <p class="hotspot-text"></p>
+        </div>
+      </template>
+
+      <!-- materials list populated from materials API -->
+      <section class="materials">
+        <div class="container">
+          <h2 class="materials__title">Materials &amp; Finishes</h2>
+          <ul id="materials-list" class="materials__list"></ul>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <img src="images/earbuds_logo.png" alt="logo" class="brand__img"/>
+        <img src="images/earbuds_logo.png" alt="logo" class="brand__img" />
         <p class="muted">© 2025 Ion Audio — All Rights Reserved</p>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>
