@@ -90,7 +90,7 @@ If editing SASS, compile to /css/main.css.
 
 Run using Live Server for best results.
 
-Ensure your browser allows module scripts for .
+Ensure your browser allows module scripts for <model-viewer>.
 
 ## 👤 Author
 Noah Kennedy Interactive Media Design
