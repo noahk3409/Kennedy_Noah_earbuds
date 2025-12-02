@@ -98,7 +98,7 @@ Hotspot details
 
 You also use a shared JSON handler for consistent error treatment.
 
- 🔹 2. Rendering API Content
+🔹 2. Rendering API Content
 
 Materials are generated as <li> elements inside <ul id="materials-list">.
 
@@ -106,7 +106,7 @@ Hotspot content is created from the <template> tag and injected into the <model-
 
 Everything updates dynamically based on returned JSON.
 
- 🔹 3. Scroll Animation
+🔹 3. Scroll Animation
 
 A canvas is initialized.
 
