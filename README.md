@@ -86,36 +86,6 @@ GitHub / Version Control
 
 VS Code / Live Server
 
-## 🚀 How the Project Works
-🔹 1. Fetching API Data
-
-Your script loads both APIs at page load using Promise.all(), ensuring:
-
-Materials list
-
-Hotspot details
-…are retrieved together.
-
-You also use a shared JSON handler for consistent error treatment.
-
-🔹 2. Rendering API Content
-
-Materials are generated as <li> elements inside <ul id="materials-list">.
-
-Hotspot content is created from the <template> tag and injected into the <model-viewer> hotspots.
-
-Everything updates dynamically based on returned JSON.
-
-🔹 3. Scroll Animation
-
-A canvas is initialized.
-
-JPG frames are loaded into memory.
-
-GSAP scrubs frame index based on scroll position.
-
-Canvas updates each frame manually using .drawImage().
-
 ## 📦 Installation & Usage
 
 Clone or download the repo.
